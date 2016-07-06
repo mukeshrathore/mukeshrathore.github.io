@@ -1,31 +1,29 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Mukesh Rathore Profile</title>
-				<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+<!doctype html>
+<html ng-app="myApp">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-route.min.js"></script>
+  </head>
+  <body>
+    <script type="text/ng-template" id="pages/home.html">
+      <h1>Home</h1>
+      <h3>{{message}}</h3>
+    </script>
+    <script type="text/ng-template" id="pages/blog.html">
+      <h1>Blog</h1>
+      <h3>{{message}}</h3>
+    </script>
+    <script type="text/ng-template" id="pages/about.html">
+      <h1>About</h1>
+      <h3>{{message}}</h3>
+    </script>
 
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Hi there, I'm Mukesh D. Rathore!</h1>
-				<p>I'm best known as UI Developer</p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>
-        		<li><a href="https://github.com/hankquinlan">github.com/mukeshrathore-Profile</a></li>
-			</ul>
-		</footer>
-	</body>
+    <a href="#/">Home</a>
+    <a href="#/blog">Blog</a>
+    <a href="#/about">About</a>
+
+    <div ng-view></div>
+
+    <script src="js/app.js"></script>
+  </body>
 </html>
