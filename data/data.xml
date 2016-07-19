@@ -1,0 +1,46 @@
+<HerosList>
+	<hero>
+		<hTitle>Superman</hTitle>
+		<phone>123</phone>
+		<photo>images/superman.jpg</photo>
+		<hDetails>Superman is a comic book superhero who appears in comic books by DC Comics.
+			He is widely considered to be an American cultural icon.
+			Created by writer Jerry Siegel and artist Joe Shuster in 1932 while both were living in Cleveland, Ohio, and sold to Detective Comics, Inc. (later DC Comics) in 1938, Superman has appeared in various radio serials, television programs, films, newspaper strips, and video games.
+		</hDetails>
+	</hero>
+	<hero>
+		<hTitle>Spiderman</hTitle>
+		<phone>456</phone>
+		<photo>images/spiderman.jpg</photo>
+		<hDetails>Spider-Man is a comic book superhero who appears in comic books published by Marvel Comics. Created by writer-editor Stan Lee and writer-artist Steve Ditko, he first appeared in Amazing Fantasy #15 (August 1962). An orphan being raised by his Aunt May and Uncle Ben, and as a teenager, having to deal with the normal struggles of adolescence in addition to those of a costumed crimefighter.
+		</hDetails>
+	</hero>
+	<hero>
+		<hTitle>Batman</hTitle>
+		<phone>567</phone>
+		<photo>images/batman.jpg</photo>
+		<hDetails>Batman is a comic book superhero created by artist Bob Kane and writer Bill Finger. The character first appeared in Detective Comics (May 1939), and since then has appeared primarily in publications by DC Comics. Originally referred to as "The Bat-Man" and still referred to at times as "The Batman", he is additionally known as "The Dark Knight".
+		</hDetails>
+	</hero>
+	<hero>
+		<hTitle>Phantom</hTitle>
+		<phone>678</phone>
+		<photo>images/phantom.jpg</photo>
+		<hDetails>The Phantom is an American adventure comic strip created by Lee Falk, also creator of Mandrake the Magician. A popular feature adapted into many media, including television, film and video games, it stars a costumed crimefighter operating from the fictional African country Bangalla.
+		</hDetails>
+	</hero>
+	<hero>
+		<hTitle>Robin</hTitle>
+		<phone>789</phone>
+		<photo>images/robin.jpg</photo>
+		<hDetails>Robin is the name of character appearing in comic books published by DC Comics, originally created by Bob Kane, Bill Finger and Jerry Robinson, as a junior counterpart to DC Comics superhero Batman. The team of Batman and Robin is commonly referred to as the Dynamic Duo or the Caped Crusaders.
+		</hDetails>
+	</hero>
+	<hero>
+		<hTitle>Ironman</hTitle>
+		<phone>901</phone>
+		<photo>images/ironman.jpg</photo>
+		<hDetails>Iron Man is a superhero who appears in comic books published by Marvel Comics. The character was created by writer-editor Stan Lee, developed by scripter Larry Lieber, and designed by artists Don Heck and Jack Kirby. He made his first appearance in Tales of Suspense #39 (March 1963).
+		</hDetails>
+	</hero>
+</HerosList>

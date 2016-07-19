@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Ajax 101 </title>
+	<style>
+		.box{
+			width: 200px;
+			height: 365px;
+			background-color: silver;
+			border: 1px solid gray;
+			padding: 5px;
+			float: left;
+			margin: 5px;
+		}
+		.box h1, h3{
+			text-align: center;
+			font-family: arial;
+			font-size: 30px;
+			font-variant:small-caps;
+			margin: 0px;
+		}
+		.box img{
+			width: 100%;
+			display: block;
+		}
+		.box h3{
+			font-size: 20px;
+		}
+		.box textarea{
+			width: 193px;
+			height: 100px;
+		}
+	</style>
+	<script>
+		var xhr = new XMLHttpRequest();
+		xhr.onreadystatechange = function(){
+			if(xhr.readyState == 4 && xhr.status == 200){
+				
+				var heros = xhr.responseXML.getElementsByTagName("hero");				
+				
+				for(var i = 0; i < heros.length; i++){
+					var hn = heros[i].getElementsByTagName("hTitle")[0].firstChild.nodeValue;
+					var ht = heros[i].getElementsByTagName("phone")[0].firstChild.nodeValue;
+					var hp = heros[i].getElementsByTagName("photo")[0].firstChild.nodeValue;
+					var hd = heros[i].getElementsByTagName("hDetails")[0].firstChild.nodeValue;
+					
+					document.getElementById("container").innerHTML += "<div class='box'><h1>"+hn+"</h1><img src='"+hp+"'/><h3>"+ht+"</h3><textarea>"+hd+"</textarea></div>";
+					
+					for(var e = 0; e < document.getElementById("container").getElementsByTagName("div").length ; e++){
+						document.getElementById("container").getElementsByTagName("img")[e].addEventListener("click", clickHandler)
+					}
+				}
+
+			}
+		
+		}
+		//-------------------------------------------------------
+		window.onload = function(){
+			xhr.open("get","data/data.xml",true);
+			xhr.send();
+		};
+		//-------------------------------------------------------
+		function clickHandler(event){
+			var p = event.target.parentElement.parentElement;
+			var el = event.target.parentElement;
+			p.removeChild(el);
+		}
+		
+	</script>
+</head>
+<body>
+	<!--div class="box">
+		<h1>Superman</h1>
+		<img src="images/batman.jpg" />
+		<h3>0987654</h3>
+		<textarea> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum odit temporibus eaque iusto voluptate non accusamus perspiciatis magni quos maiores totam provident obcaecati deleniti doloribus sequi corporis error inventore odio.</textarea>
+	</div-->
+
+<div id="container"></div>
+	
+	
+</body>
+</html>
