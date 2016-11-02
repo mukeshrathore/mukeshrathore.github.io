@@ -1,0 +1,43 @@
+<!DOCTYPE html><html><style>
+body {font-family: "Lato", sans-serif;}
+.sidenav {height: 100%;	width: 0;	position: fixed;	z-index: 2;	top: 0;	left: 0;	background-color: #111;	overflow-x: hidden;	transition: 0.5s;	padding-top: 60px;}
+.sidenav a {padding: 8px 8px 8px 32px;	text-decoration: none;	font-size: 25px;	color: #818181;	display: block;	transition: 0.5s;}
+.sidenav a:hover, .offcanvas a:focus {	color: #f1f1f1;}
+.sidenav .closebtn {	position: absolute;	top: 0;	right: 25px;	font-size: 36px;	margin-left: 50px;}
+#mainContent {	transition: margin-left 0.5s;	padding: 16px;}
+@media screen and (max-height: 450px) {
+.sidenav {	padding-top: 15px;}
+.sidenav a {	font-size: 18px;}
+}
+.overlay3 {	height: 100%;	width: 0;	position: fixed;	z-index: 1;	top: 0; left: 0; background-color: rgba(0,0,0,0.9);	overflow-y: auto;overflow-x: hidden;	text-align: center;	opacity: 0;	transition: opacity 0.5s, margin-left 0.5s;}
+</style>
+<body>
+<div id="myCanvasNav" class="overlay3" onclick="closeOffcanvas()"></div>
+<div id="Offcanvas" class="sidenav"> <a href="javascript:void(0)" class="closebtn" onclick="closeNav();closeOffcanvas()">&times;</a> <a href="#">About</a> <a href="#">Services</a> <a href="#">Clients</a> <a href="#">Contact</a> </div>
+<div id="mainContent">
+  <h2>Sidenav Push Example</h2>
+  <p>Click on the element below to open the side navigation menu, and push this content to the right. Notice that we add a black see-through background-color to body when the sidenav is opened.</p>
+  <span style="font-size:30px;cursor:pointer" onclick="openNav3();openOffcanvas()">&#9776; open</span> </div>
+<script>
+function openNav3() {
+    document.getElementById("Offcanvas").style.width = "250px";
+    document.getElementById("mainContent").style.marginLeft = "250px";
+	document.getElementById("myCanvasNav").style.backgroundColor = "rgb(0,0,0)";
+	document.getElementById("myCanvasNav").style.width = "100%";
+    document.getElementById("myCanvasNav").style.opacity = "0.4";
+}
+function closeNav() {
+    document.getElementById("Offcanvas").style.width = "0";
+    document.getElementById("mainContent").style.marginLeft= "0";
+}
+function closeOffcanvas() {
+    document.getElementById("Offcanvas").style.width = "0%";
+    document.getElementById("mainContent").style.marginLeft = "0%";
+    document.getElementById("myCanvasNav").style.width = "0%";
+    document.getElementById("myCanvasNav").style.opacity = "0"; 
+}
+function openOffcanvas() {
+    document.getElementById("Offcanvas").style.width = "250px";
+    document.getElementById("mainContent").style.marginLeft = "250px";
+}
+</script></body></html>
