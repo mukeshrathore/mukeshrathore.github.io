@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Building2, Layout, Users, Camera, Plane, BookOpen, Code2 } from 'lucide-react';
+import { Building2, LayoutGrid as Layout, Users, Camera, Plane, BookOpen, Code as Code2 } from 'lucide-react';
 import { skills, hobbies, specialities } from '../data/portfolioData';
 
 const iconMap = {
