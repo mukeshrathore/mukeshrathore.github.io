@@ -19,7 +19,7 @@ Thumbs.db
 *.code-workspace
 
 # Dependency directories
-package-lock.json
+# package-lock.json
 
 # Temporary files
 *.tmp
