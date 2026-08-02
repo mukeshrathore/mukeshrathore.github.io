@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { ArrowDown, Download, MapPin } from 'lucide-react'
+import { ArrowDown, Circle, Download, MapPin } from 'lucide-react'
 import { profile } from '../data/portfolio.js'
 
 export default function Hero() {
@@ -19,8 +19,9 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="inline-block px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-sm text-sm font-medium text-primary-100 mb-6 border border-white/10"
+            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-sm text-sm font-medium text-primary-100 mb-6 border border-white/10"
           >
+            <Circle size={14} className="text-emerald-400" fill="currentColor" />
             Available for opportunities
           </motion.span>
 
