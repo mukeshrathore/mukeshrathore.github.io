@@ -2,7 +2,7 @@ name: Deploy React App to GitHub Pages
 
 on:
   push:
-    branches: ["react-version"] # Triggers on push to your react-version branch
+    branches: ["**"] # Triggers on push to your react-version branch
 
 permissions:
   contents: read
