@@ -1,16 +1,16 @@
 export const profile = {
   name: 'Mukesh Rathore',
-  role: 'Software Engineer / Web Developer',
+  role: 'Senior Software Engineer',
   email: 'mukesh.rathore86@gmail.com',
   resumeUrl: 'https://mukeshrathore.github.io/resume',
   about: 'Versatile and Dynamic Java UI Developer',
   aboutDetail: 'Working as Senior Software Developer, capable of pushing the limits creatively in fast paced, deadline-oriented environment and experience with Information Architecture.',
   social: {
     linkedin: 'https://www.linkedin.com/in/mukeshrathore86/',
-    twitter: 'https://twitter.com/mukeshrathore86',
+    x: 'https://x.com/mukeshrathore86',
     github: 'https://github.com/mukeshrathore',
   },
-  address: '9907 Network Ln, Charlotte, NC-28262',
+  address: 'Charlotte, NC',
 }
 
 export const skills = [

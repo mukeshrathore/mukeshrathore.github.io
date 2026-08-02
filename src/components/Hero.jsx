@@ -99,7 +99,7 @@ export default function Hero() {
           <div className="relative">
             <div className="absolute -inset-4 bg-gradient-to-tr from-primary-400/30 to-secondary-400/30 rounded-full blur-3xl" />
             <img
-              src="/assets/img/avatar-default.jpg"
+              src="/assets/img/mr_avatar.jpg"
               alt={profile.name}
               className="relative w-64 h-64 lg:w-80 lg:h-80 rounded-full object-cover border-4 border-white/20 shadow-2xl"
             />

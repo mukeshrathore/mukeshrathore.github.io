@@ -1,4 +1,4 @@
-import { Linkedin, Twitter, Github } from 'lucide-react'
+import { Linkedin, X, Github } from 'lucide-react'
 import { profile } from '../data/portfolio.js'
 
 export default function Footer() {
@@ -20,13 +20,13 @@ export default function Footer() {
               <Linkedin size={18} />
             </a>
             <a
-              href={profile.social.twitter}
+              href={profile.social.x}
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 rounded-lg bg-white/5 hover:bg-white/15 flex items-center justify-center text-primary-200 hover:text-white transition-all"
-              aria-label="Twitter"
+              aria-label="x"
             >
-              <Twitter size={18} />
+              <X size={18} />
             </a>
             <a
               href={profile.social.github}
